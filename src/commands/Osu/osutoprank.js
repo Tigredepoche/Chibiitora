@@ -3,7 +3,7 @@ const osu = require('node-osu');
 const { MessageEmbed } = require('discord.js');
 var randomColor = require('randomcolor'); // import the script
 
-var osuApi = new osu.Api(process.env.TOKKEN_OSU, {
+var osuApi = new osu.Api(process.env.TOKEN_OSU, {
     // baseUrl: sets the base api url (default: https://osu.ppy.sh/api)
     notFoundAsError: true, // Reject on not found instead of returning nothing. (default: true)
     completeScores: false // When fetching scores also return the beatmap (default: false)

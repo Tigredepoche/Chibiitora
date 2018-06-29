@@ -1,0 +1,2 @@
+# Chibiitora
+updated discordbot 

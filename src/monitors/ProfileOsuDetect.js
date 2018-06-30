@@ -1,15 +1,12 @@
 const { Monitor } = require('klasa');
 const { MessageEmbed } = require('discord.js');
 var randomColor = require('randomcolor'); // import the script
-const Nodesu = require('nodesu');
-
-const api = new Nodesu.Client(process.env.TOKEN_OSU,);
 
 module.exports = class extends Monitor {
 
     constructor(...args) {
         super(...args, {
-            name: 'test',
+            name: 'profileosu',
             enabled: true,
             ignoreBots: true,
             ignoreSelf: true,

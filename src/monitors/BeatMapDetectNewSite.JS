@@ -19,33 +19,19 @@ module.exports = class extends Monitor {
     }
 
     async run(msg) {
-
         var idmessage = msg.content
         var color = randomColor(); // a hex code for an attractive color
-        var IDbeatmap = idmessage.split('/').pop();
-        console.log(IDbeatmap);
-        
+        var IDbeatmap = idmessage.split('/').pop()
+        console.log(IDbeatmap)
         if(msg.content.startsWith('https://osu.ppy.sh/beatmapsets/')){
             // console.log('beatmapsets')
             //Api call to get map data
         api.beatmaps
         .getByBeatmapId(IDbeatmap)
         .then(beatmaps=> {
-            //console.log(beatmaps[0])
+            // console.log(beatmaps[0])
         
         // If Else statements are mainly made for fun ( viva private joke )
-        if (beatmaps[0]['creator'] === 'Sotarks') {
-            var creatormessage = 'Various Artists - Songs Compilation'
-        }
-        else if (beatmaps[0]['creator'] === 'Monstrata') {
-            var creatormessage = 'Le village caché du pp farming !'
-        }
-        else if (beatmaps[0]['creator'] === 'Jean-Michel Jr') {
-            var creatormessage = 'Vive le mappeur de Magic System'
-        } 
-        else if (beatmaps[0]['creator'] === 'codeS') {
-            var creatormessage = 'Mais je reconnais, c\'est Roses Epicurean !'
-        } else(creatormessage = 'owo')
 
         // Creating Embed 
         var embed = new MessageEmbed()
@@ -56,7 +42,7 @@ module.exports = class extends Monitor {
         .addField('❯ BPM', beatmaps[0]['bpm'], true)
         .addField('❯ Length', Math.floor(beatmaps[0]['total_length']/60) + 'm' + Math.floor(beatmaps[0]['total_length']%60) +'s' + ' (*' + Math.floor(beatmaps[0]['hit_length']/60) + 'm' + Math.floor(beatmaps[0]['hit_length']%60) +'s' + (' drain*)'),true)
     
-        .setFooter(creatormessage)
+        .setFooter('owo')
         .setURL('https://osu.ppy.sh/b/'+ beatmaps[0].beatmap_id)
         .setColor(color) 
         .setThumbnail('https://b.ppy.sh/thumb/' + beatmaps[0].beatmapset_id + 'l.jpg')

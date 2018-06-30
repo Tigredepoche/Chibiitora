@@ -21,7 +21,7 @@ module.exports = class extends Monitor {
     async run(msg) {
 
         var color = randomColor(); // a hex code for an attractive color
-        var IDbeatmap = (msg.content).slice(42, 50)
+        var IDbeatmap = (msg.content).slice(43, 50)
         if(msg.content.startsWith('https://osu.ppy.sh/beatmapsets/')){
             // console.log('beatmapsets')
             //Api call to get map data

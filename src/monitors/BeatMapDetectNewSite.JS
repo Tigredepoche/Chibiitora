@@ -19,6 +19,7 @@ module.exports = class extends Monitor {
     }
 
     async run(msg) {
+        console.log('ALLO ????')
         var idmessage = msg.content
         var color = randomColor(); // a hex code for an attractive color
         var IDbeatmap = idmessage.split('/').pop()

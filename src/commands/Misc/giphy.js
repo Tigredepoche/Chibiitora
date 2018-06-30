@@ -1,5 +1,5 @@
 const { Command } = require('klasa');
-var giphy = require('giphy-api')( process.env.GIPHY_KEY' );
+var giphy = require('giphy-api')( process.env.GIPHY_KEY );
 
 module.exports = class extends Command {
 

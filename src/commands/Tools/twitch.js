@@ -13,7 +13,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Returns information on a Twitch.tv Account',
+			description: 'Indique les informations d\'un compte twitch.',
 			usage: '<name:str>'
 		});
 		this.timestamp = new Timestamp('DD-MM-YYYY');

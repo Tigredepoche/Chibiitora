@@ -6,7 +6,7 @@ module.exports = class extends Command {
 		super(...args, {
 			aliases: ['choose', 'decide'],
 
-			description: 'Makes a decision for you given some choices.',
+			description: 'Fait le choix entre plusieurs propositions.',
 			usage: '<choices:str> [...]',
 			usageDelim: '|'
 		});

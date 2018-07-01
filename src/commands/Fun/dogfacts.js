@@ -3,7 +3,7 @@ const { Command } = require('klasa');
 module.exports = class extends Command {
 
 	constructor(...args) {
-		super(...args, { description: 'Gives you a random dog fact.' });
+		super(...args, { description: 'Donne un dogfact (en anglais.)' });
 	}
 
 	run(msg) {

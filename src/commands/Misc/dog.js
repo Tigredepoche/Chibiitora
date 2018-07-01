@@ -6,7 +6,7 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			aliases: ['randomdog', 'woof'],
-			description: 'Grabs a random dog image from random.dog.',
+			description: 'Recupère une image de chien sur random.dog',
 			extendedHelp: 'This command grabs a random dog from "https://random.dog/woof.json".'
 		});
 	}

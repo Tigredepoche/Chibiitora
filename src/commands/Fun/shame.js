@@ -4,7 +4,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Rings a bell on the server shaming the mentioned person.',
+			description: 'Fait sonner la cloche (🔔) du shame sur une personne au choix.',
 			usage: '<user:user>'
 		});
 	}

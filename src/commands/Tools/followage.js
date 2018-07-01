@@ -13,7 +13,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Shows the followage of a given user from a given twitch channel.',
+			description: 'Indique depuis combien de temps une personne follow une chaine twitch',
 			usage: '<name:str> <channel:str>',
 			usageDelim: ' '
 		});

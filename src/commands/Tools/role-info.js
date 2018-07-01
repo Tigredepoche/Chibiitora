@@ -5,7 +5,7 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			runIn: ['text'],
-			description: 'Get information on a role with an id or a mention.',
+			description: 'Donne l\'info d\'un role via une mention ou un ID',
 			usage: '<Role:role>'
 		});
 		this.perms = {

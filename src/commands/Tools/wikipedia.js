@@ -7,7 +7,7 @@ module.exports = class extends Command {
 	constructor(...args) {
 		super(...args, {
 			aliases: ['wiki'],
-			description: 'Finds a Wikipedia Article by title.',
+			description: 'Cherche un article wikipedia via son nom',
 			usage: '<query:str>'
 		});
 	}

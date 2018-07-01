@@ -5,7 +5,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Returns a random reddit post on a given subreddit.',
+			description: 'Donne un post reddit random sur le subreddit indiqué.',
 			usage: '<subreddit:str>'
 		});
 		this.errorMessage = `There was an error. Reddit may be down, or the subreddit doesnt exist.`;

@@ -7,7 +7,7 @@ module.exports = class extends Command {
 			runIn: ['text'],
 			aliases: ['ti'],
 			requiredPermissions: ['MANAGE_GUILD'],
-			description: 'Shows the top invites in a server.'
+			description: 'Indique l\'id de l\'invitation la plus utilisé..'
 		});
 	}
 

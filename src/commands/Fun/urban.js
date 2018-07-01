@@ -5,7 +5,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Searches the Urban Dictionary library for a definition to the search term.',
+			description: 'Recherche la definition du terme choisi sur Urban Dictionary.',
 			usage: '<search:str> [resultNum:int]',
 			usageDelim: ', '
 		});

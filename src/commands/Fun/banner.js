@@ -5,7 +5,7 @@ module.exports = class extends Command {
 
 	constructor(...args) {
 		super(...args, {
-			description: 'Creates an ASCII banner from the string you supply.',
+			description: 'Creer une bannière ascii à partir du message indiqué.',
 			usage: '<banner:str>'
 		});
 	}

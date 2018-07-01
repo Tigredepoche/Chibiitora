@@ -8,7 +8,7 @@ module.exports = class extends Command {
 
 			description: 'Fait le choix entre plusieurs propositions.',
 			usage: '<choices:str> [...]',
-			usageDelim: '|'
+			usageDelim: '/'
 		});
 	}
 

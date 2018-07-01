@@ -7,7 +7,7 @@ const querystring = require('querystring');
  * https://dev.twitch.tv/docs/v5/guides/authentication/
  */
 // eslint-disable-next-line camelcase
-const qs = querystring.stringify({ client_id: 'CLIENT_ID_HERE' });
+const qs = querystring.stringify({ client_id: process.env.CLIENTID_TWITCH });
 
 module.exports = class extends Command {
 

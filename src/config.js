@@ -13,7 +13,7 @@ exports.config = {
     // The default language that comes with klasa. More base languages can be found on Klasa-Pieces
     language: 'en-US',
     // The default configurable prefix for each guild
-    prefix: '-',
+    prefix: '!',
     // If custom configs should be preserved when a guild removes your bot
     preserveConfigs: true,
     // If your bot should be able to mention @everyone

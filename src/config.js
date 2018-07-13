@@ -25,7 +25,7 @@ exports.config = {
     // Any Websocket Events you don't want to listen to
     disabledEvents: [],
     // A presence to login with
-    presence: {},
+    presence: {activity : { type: 'WATCHING', name : ' you' }},
     // A once ready message for your console
     readyMessage: (client) => `Successfully initialized. Ready to serve ${client.guilds.size} guild${client.guilds.size === 1 ? '' : 's'}.`,
 

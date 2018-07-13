@@ -41,7 +41,7 @@ module.exports = class extends Command {
 // Storing it in a separate .graphql/.gql file is also possible
 var query = `
 query ($search: String) {
-    Media(search: $search, format: TV, sort: SCORE_DESC) {
+    Media(search: $search, format: TV) {
       description(asHtml: false)
       id
       episodes

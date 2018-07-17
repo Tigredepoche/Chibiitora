@@ -142,7 +142,7 @@ function handleData(owo) {
         .addField('❯ Start Date', info.startDate.day + '/' + info.startDate.month + '/' + info.startDate.year,true)
         .addField('❯ End Date', info.endDate.day + '/' + info.endDate.month + '/' + info.endDate.year,true)
         .addField('❯ Genres', toutlesgenres )
-        .addField('❯ Description', info.description,true)
+        .addField('❯ Description', descSTRembed ,true)
 
 
     msg.channel.send(embed)

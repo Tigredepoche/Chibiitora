@@ -113,6 +113,23 @@ function handleData(owo) {
     var info = owo.data.Media
     var listegenres = info.genres
     var toutlesgenres = listegenres.join()
+    
+        //Car tout est souvent ongoing :(
+    if(info.endDate.day === null){
+        var ENDDATE = 'Still releasing'
+    }
+    else {
+        var ENDDATE = info.endDate.day + '/' + info.endDate.month + '/' + info.endDate.year
+    }
+
+    //Car la description est parfois beaucoup trop longue ( Merci Hajime no ippo d'avoir 1107 caractères alors que j'ai le droit à 1024 maximum)
+    var text = info.description
+    var striphere = 1021
+    var shortText = text.substring(0, striphere) + '...'
+    //Et parfois les balises html me tilt dans les descriptions z.z
+    var descSTR = shortText
+    var descSTRembed = descSTR.replace(/<br *\/?>/g, "\n").replace(/\n|&rsquo;/,'');
+
     var embed = new MessageEmbed()
         .setTitle(info.title.romaji)
         .setURL('https://anilist.co/anime/' + info.id)
